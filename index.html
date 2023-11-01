@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
@@ -15,35 +16,151 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-        <div id="particles-js">
-            <div class="titulo">
-                <h1>Oi, me chamo <span>Arthur!</span></h1>
-                <h1>Eu sou um Desenvolvedor Full-Stack e UX Designer!</h1>
+    <div id="particles-js">
+        <div class="titulo">
+            <h1>Oi, me chamo <span>Arthur!</span></h1>
+            <h1>Eu sou um Desenvolvedor Full-Stack!</h1>
 
-                <div class="ver-meu-trabalho">
-                    <h2>Ver meu trabalho </h2>
-                    <span class="material-symbols-outlined">
-                        arrow_back_ios
-                        </span>
-                </div>
-            </div>  
+            <div class="ver-meu-trabalho">
+                <h2>Ver meu trabalho </h2>
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </div>
         </div>
+    </div>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <header>
-            <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Portfólio</li>
-                <li>Redes Sociais</li>
-                <li>Contato</li>
-            </ul>
-        </header>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Portfólio</li>
+            <li>Redes Sociais</li>
+            <li>Contato</li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h3 id="sobre">Sobre</h3>
+
+
+            <div class="cards">
+
+                <div id="card_1" class="card">
+                    <img src="/imgs/rapido.png" alt="">
+                    <h2>Rápido</h2>
+                    <p>Sites rápidos e agradáveis, seguindos todos os principios do design para o usuário ter sempre a
+                        melhor experiência possível!</p>
+                </div>
+
+                <div id="card_2" class="card">
+                    <img src="/imgs/responsivo.png" alt="">
+                    <h2>Responsivo</h2>
+                    <p>Responsividade sempre foi meu compromisso. A criação de sites multiplataforma é um compromisso
+                        que eu
+                        sempre vou ter com meus clientes!</p>
+                </div>
+
+                <div id="card_3" class="card">
+                    <img src="/imgs/intuitivo.png" alt="">
+                    <h2>Intuitivo</h2>
+                    <p>Criação de site intuitivos e fáceis de navegar, com uma abordagem minimalista e moderna.</p>
+                </div>
+            </div>
+
+            <div class="organizar">
+
+                <div class="apresentacao">
+                    <img src="/imgs/eu.jpg" alt="" class="hexagono" id="eu">
+                    <h2 id="quem">Quem é esse cara?</h2>
+                    <p id="quem">Aluno da Fiap e designer gráfico da Saga, minha trajetória é definida pela habilidade em back-end
+                        e
+                        pela criação de sites e ferramentas automatizadas. Com cada projeto, busco transformar desafios
+                        em
+                        soluções práticas e inteligentes.</p>
+                </div>
+
+                <div class="skills">
+                    <div class="skill-bar">
+                        <label>CSS</label>
+                        <div class="bar">
+                            <div class="fill1" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>HTML</label>
+                        <div class="bar">
+                            <div class="fill2" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>JAVASCRIPT</label>
+                        <div class="bar">
+                            <div class="fill3" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>PYTHON</label>
+                        <div class="bar">
+                            <div class="fill4" style="width: 20%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>PHOTOSHOP</label>
+                        <div class="bar">
+                            <div class="fill5" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>ILLUSTRATOR</label>
+                        <div class="bar">
+                            <div class="fill6" style="width: 50%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>NODE JS</label>
+                        <div class="bar">
+                            <div class="fill7" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>MONGO DB</label>
+                        <div class="bar">
+                            <div class="fill8" style="width: 20%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <label>SQL</label>
+                        <div class="bar">
+                            <div class="fill9" style="width: 40%;"></div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
     <script src="app"></script>
     <script src="particles.js"></script>
 </body>
