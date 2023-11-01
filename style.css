@@ -260,3 +260,72 @@ label {
   justify-content: center;
   align-items: center;
 }
+
+
+/* Projetos */ 
+
+.projetos{
+  background-color: #232b2c;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria{
+  width: 300px;
+  height: 300px;
+  background-image: url('./imgs/katins.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.texto h3{
+  margin: 0;
+  color: black;
+  font-size: 2rem;
+  font-family: 'Raleway' sans-serif !important;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.texto h4{
+  font-family: 'Raleway' sans-serif !important;
+  font-weight: 600;
+  color: #29A6CC;
+}
+
+.ver_site{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  border: #29A6CC 2px solid;
+  cursor: pointer;
+}
+
+.ver_site p{
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+.ver_site p:hover{
+  transition: .7s;
+  color: white;
+}
+
+.ver_site:hover{
+  background-color: #29A6CC;
+  transition: .7s;
+  
+}
+
+.katins{
+  width: 30%;
+}
