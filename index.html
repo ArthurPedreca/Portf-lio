@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@600&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -88,7 +90,7 @@
                     <p id="quem">Aluno da Fiap e designer gráfico da Saga, minha trajetória é definida pela habilidade
                         em back-end
                         e
-                        
+
                         pela criação de sites e ferramentas automatizadas. Com cada projeto, busco transformar desafios
                         em
                         soluções práticas e inteligentes.</p>
@@ -131,7 +133,7 @@
                     </div>
 
                     <div class="skill-bar">
-                        <label>ILLUSTRATOR</label>
+                        <label>CANVA</label>
                         <div class="bar">
                             <div class="fill6" style="width: 50%;"></div>
                         </div>
@@ -164,19 +166,118 @@
         <section class="projetos">
             <h3 id="sobre">Projetos</h3>
 
-            <div class="galeria" id="galeria">
 
-                <div class="texto">
-                    <h3>Grupo Katins</h3>
-                    <h4>HTML / CSS</h4>
+            <div class="trabalhos">
+                <div class="cinza">
+                    <div class="galeria">
+                        <div class="texto">
+                            <h3>Grupo Katins</h3>
+                            <h4>HTML / CSS</h4>
+                        </div>
+                        <div class="ver_site">
+                            <p>Ver Projeto</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="ver_site">
-                    <p>Ver Projeto</p>
+
+                <div class="cinza">
+                    <div class="galeria" data-image="FIGMA">
+                        <div class="texto">
+                            <h3>Cartões Virtuais</h3>
+                            <h4>FIGMA / PHOTOSHOP</h4>
+                        </div>
+                        <div class="ver_site">
+                            <p>Ver Projeto</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cinza">
+                    <div class="galeria" data-image="THREE">
+                        <div class="texto">
+                            <h3>Dados RPG</h3>
+                            <h4>JAVASCRIPT / THREEJS</h4>
+                        </div>
+                        <div class="ver_site">
+                            <p>Ver Projeto</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cinza">
+                    <div class="galeria" data-image="CANVA">
+                        <div class="texto">
+                            <h3>Saúde Dinamica</h3>
+                            <h4>CANVA</h4>
+                        </div>
+                        <div class="ver_site">
+                            <p>Ver Projeto</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cinza">
+                    <div class="galeria" data-image="EBOOK">
+                        <div class="texto">
+                            <h3>EBOOK</h3>
+                            <h4>CANVA</h4>
+                        </div>
+                        <div class="ver_site">
+                            <p>Ver Projeto</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cinza">
+                    <div class="galeria" data-image="EMFOCO">
+                        <div class="texto">
+                            <h3 class="criancas">CRIANÇAS EM FOCO</h3>
+                            <h4>HTML / CSS / JAVASCRIPT</h4>
+                        </div>
+                        <div class="ver_site">
+                            <p>Ver Projeto</p>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
+
         </section>
+
+        <section>
+            <h3 id="sobre">Contato</h3>
+
+            <p class="pergunta">Tem alguma pergunta ou quer fazer um trabalho junto comigo?</p>
+
+            <form action="https://api.staticforms.xyz/submit" method="post" class="custom-form">
+                <input class="input-field" type="text" name="name" placeholder="Seu Nome">
+                <input class="input-field" type="text" name="email" placeholder="Seu Email" />
+                <textarea class="textarea-field" name="Mensagem" placeholder="Mensagem"></textarea>
+                <input class="submit-button" type="submit" value="Enviar" />
+
+                <input type="hidden" name="accessKey" value="90db9d7a-004d-4bee-9fed-df7507fcdd85">
+                <input type="hidden" name="redirectTo" value="https://arthurpedreca.github.io/Portfolio">
+            </form>
+        </section>
+
+
     </main>
+
+    <footer class="organizar2">
+        <div class="icones">
+            <a href=""><i class="fab fa-github" id="github"></i></a>
+            <a href=""><i class="fab fa-instagram" id="ig"></i></a>
+            <a href=""><i class="fab fa-whatsapp" id="zap"></i></a>
+        </div>
+
+        <h6>Arthur Pedreca © 2023 </h6>
+    </footer>
     <script src="app"></script>
     <script src="particles.js"></script>
 </body>
