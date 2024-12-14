@@ -106,5 +106,57 @@ sr.reveal('.fab', {
 })
 
 
+// Exemplo de informações dos projetos
+const projectInfo = {
+  CANVA: {
+    title: "Desenvolvimento de White Label",
+    description: "Este projeto foi desenvolvido utilizando VueJS e MongoDB. Essa foi um projeto no qual eu trabalhei tanto no FrontEnd, quanto no backend, principalmente focado na parte de inovação e criação de algoritmos!"
+  },
+  EBOOK: {
+    title: "Automação Gerador de Leads",
+    description: "Projeto desenvolvido em Python utilizando Selenium, esse programa foi destinado para fazer a captação de leads para uma empresa chamada Sorria Bank, onde eu criei um script em Selenium que pegava os dados de possíveis clientes em um site chamado Econodata, depois de pegar os dados eu tinha que salvar eles em uma planilha e enviar para a Sorria!"
+  },
+  EMFOCO: {
+    title: "Fixy Repair",
+    description: "Projeto desenvolvido em React e MongoDB, e eu fiquei mais focado na parte da criação da API e do banco de dados"
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modalOverlay = document.getElementById('modal-overlay');
+  const modalClose = document.getElementById('modal-close');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDescription = document.getElementById('modal-description');
+
+  const galerias = document.querySelectorAll('.galeria');
+  
+  galerias.forEach(galeria => {
+    galeria.addEventListener('click', () => {
+      const dataImage = galeria.getAttribute('data-image');
+      const info = projectInfo[dataImage];
+
+      if(info) {
+        modalTitle.textContent = info.title;
+        modalDescription.textContent = info.description;
+        
+        // Exibir modal
+        modalOverlay.classList.add('show');
+      }
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modalOverlay.classList.remove('show');
+  });
+
+  // Fechar modal ao clicar fora
+  modalOverlay.addEventListener('click', (e) => {
+    if(e.target === modalOverlay) {
+      modalOverlay.classList.remove('show');
+    }
+  });
+});
+
+// Seu código existente do ScrollReveal e outras funcionalidades permanecem inalterados.
 
 
