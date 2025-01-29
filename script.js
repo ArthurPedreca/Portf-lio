@@ -114,7 +114,7 @@ const projectInfo = {
   },
   EBOOK: {
     title: "Automação Gerador de Leads",
-    description: "Projeto desenvolvido em Python utilizando Selenium, esse programa foi destinado para fazer a captação de leads para uma empresa chamada Sorria Bank, onde eu criei um script em Selenium que pegava os dados de possíveis clientes em um site chamado Econodata, depois de pegar os dados eu tinha que salvar eles em uma planilha e enviar para a Sorria!"
+    description: "Projeto desenvolvido em Python utilizando Selenium, esse programa foi destinado para fazer a captação de leads para uma empresa chamada Sorria Bank, onde eu criei um script em Selenium que buscava os dados de possíveis clientes em um site chamado Econodata, depois de pegar os dados eu tinha que salvar eles em uma planilha e enviar para a Sorria!"
   },
   EMFOCO: {
     title: "Fixy Repair",
@@ -156,6 +156,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Exemplo usando id para o ícone e a ul
+const btnMobile = document.getElementById("btn-mobile"); 
+const nav = document.getElementById("nav"); // suponde que <ul> tem id="nav"
+
+btnMobile.addEventListener("click", () => {
+  nav.classList.toggle("active");
+});
+
+
 
 // Seu código existente do ScrollReveal e outras funcionalidades permanecem inalterados.
 
